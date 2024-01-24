@@ -31,20 +31,25 @@ public class Venda {
             for (int i = 0; i < this.producteLista.size(); i++) {
                 this.vendaTotal = this.vendaTotal + this.producteLista.get(i).getPrecio();
             }
-            /*for (Producte producte : this.producteLista) {
-                this.vendaTotal = this.vendaTotal + producte.getPrecio();
-            }*/
             System.out.println("La venta total es " + this.vendaTotal);
         } catch (VendaBuidaException e){
             System.out.println(e.getMessage());
-        } catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("Error: Fuera de rango");
+        }
+    }
+
+    public void printProducts(String[] products){
+        try{
+            for (int i = 0; i <= products.length; i++) {
+                System.out.println(products[i]);
+            }
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("ERROR: Fuera de rango");
         }
     }
 
     private void checkVacio (ArrayList<Producte> producteLista) throws VendaBuidaException {
         if(producteLista.size() <= 0){
-            throw new VendaBuidaException("Per fer una venda primer has d’afegir productes");
+            throw new VendaBuidaException("ERROR: Per fer una venda primer has d’afegir productes");
         }
 
     }
