@@ -3,13 +3,8 @@ package ventaProductos;
 import java.util.ArrayList;
 
 public class Venda {
-    private ArrayList <Producte> producteLista;
+    private ArrayList <Producte> producteLista = new ArrayList<Producte>();
     private double vendaTotal;
-
-    public Venda() {
-        this.producteLista = new ArrayList<Producte>();
-        this.vendaTotal = 0;
-    }
 
     public ArrayList<Producte> getProducteLista() {
         return producteLista;
