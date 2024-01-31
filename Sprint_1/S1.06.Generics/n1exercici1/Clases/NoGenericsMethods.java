@@ -1,9 +1,9 @@
 package Clases;
 
 public class NoGenericsMethods {
-    String a;
-    String b;
-    String c;
+    private String a;
+    private String b;
+    private String c;
 
     public NoGenericsMethods(String a, String b, String c){
         this.a = a;
