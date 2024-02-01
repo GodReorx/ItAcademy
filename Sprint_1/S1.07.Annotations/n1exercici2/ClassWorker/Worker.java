@@ -1,9 +1,9 @@
 package ClassWorker;
 
 public class Worker {
-    String name;
-    String surname;
-    int priceHour;
+    protected String name;
+    protected String surname;
+    protected int priceHour;
 
     public Worker(String name, String surname, int priceHour) {
         this.name = name;

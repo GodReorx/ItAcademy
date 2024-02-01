@@ -9,6 +9,7 @@ public class WorkerOnline extends Worker {
     public WorkerOnline(String name, String surname, int priceHour) {
         super(name, surname, priceHour);
     }
+
     @Deprecated
     public int calculateSalary(int hours, int elecWaterSupply){
         return (hours * super.priceHour) + INTERNET + elecWaterSupply;
