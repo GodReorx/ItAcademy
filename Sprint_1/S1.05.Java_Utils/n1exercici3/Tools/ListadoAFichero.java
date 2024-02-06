@@ -47,7 +47,7 @@ public class ListadoAFichero {
         }catch (NullPointerException e) {
             System.out.println("No existe el path proporcionado o es incorrecto.\n");
         }catch (FileNotFoundException e) {
-            System.out.println("ERROR: No se ha encontrado el arvhico.\n");
+            System.out.println("ERROR: No se ha encontrado el archivo.\n");
         }
     }
 }

@@ -83,7 +83,6 @@ public class ListadoAFicheroAvanzado{
                 while ((line = bf.readLine()) != null) {
                     System.out.println(line);
                 }
-                bf.close();
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             } catch (IOException e) {
@@ -119,8 +118,7 @@ public class ListadoAFicheroAvanzado{
         } catch (FileNotFoundException e){
             System.out.println("ERROR: no se ha encontrado el archivo pruebas.ser\n");
         } catch (IOException e) {
-            //System.out.println("ERROR: no se ha podido abrir el archivo pruebas.ser\n");
-            e.printStackTrace();
+            System.out.println("ERROR: no se ha podido abrir el archivo pruebas.ser\n");
         }
     }
 

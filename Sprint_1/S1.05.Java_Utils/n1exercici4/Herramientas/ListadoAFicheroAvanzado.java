@@ -76,7 +76,6 @@ public class ListadoAFicheroAvanzado {
                 while ((line = bf.readLine()) != null) {
                     System.out.println(line);
                 }
-                bf.close();
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             } catch (IOException e) {
